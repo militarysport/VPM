@@ -57,3 +57,10 @@ const currentYear = document.getElementById('current-year');
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
+
+
+// Небольшой каскадный эффект появления карточек
+const cards = document.querySelectorAll('.card');
+cards.forEach((card, index) => {
+  card.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
+});
