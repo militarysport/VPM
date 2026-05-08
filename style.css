@@ -92,9 +92,10 @@ body {
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(130deg, rgba(7, 18, 12, 0.84), rgba(8, 12, 10, 0.9)),
-    linear-gradient(115deg, rgba(198, 40, 40, 0.25), transparent 40%),
-    url('assets/images/hero/minsk-parade.svg') center/cover no-repeat;
+    radial-gradient(circle at 18% 22%, rgba(33, 71, 48, 0.55), transparent 44%),
+    radial-gradient(circle at 82% 16%, rgba(160, 30, 30, 0.32), transparent 38%),
+    repeating-linear-gradient(145deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 9px),
+    linear-gradient(125deg, #15261f 0%, #0f1915 45%, #0b1210 100%);
 }
 
 
