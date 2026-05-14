@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Официальный информационный портал по военно-прикладному многоборью Республики Беларусь." />
+  <title>Военно-прикладное многоборье | Беларусь</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="На главную">
+        <img src="assets/images/champions/emblem.png" alt="Эмблема военно-прикладного многоборья" class="brand__emblem" />
+        <div class="brand__text">
+          <h1>Военно-прикладное многоборье</h1>
+          <p>Официальный информационный портал</p>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="protocols.html">Протоколы соревнований</a></li>
+          <li><a href="rules/rules.pdf" target="_blank" rel="noopener">Правила</a></li>
+          <li><a href="champions.html">Чемпионы</a></li>
+          <li><a href="Table.pdf" target="_blank" rel="noopener">Сводная таблица</a></li>
+          <li><a href="records.html">Рекорды</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="hero">
+      <div class="hero__overlay"></div>
+      <div class="ornament ornament--left" aria-hidden="true"></div>
+      <div class="ornament ornament--right" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="hero__kicker">Республика Беларусь</p>
+        <h2>Военно-прикладное многоборье</h2>
+        <p class="hero__subtitle">Сила. Быстрота. Выносливость.</p>
+        <a href="#sections" class="btn-glow">Смотреть разделы</a>
+      </div>
+    </section>
+
+    <section class="sections container reveal" id="sections">
+      <div class="section-title">
+        <h3>Основные разделы</h3>
+        <p>Оперативный доступ к официальной информации, результатам и нормативным материалам.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card__icon">📄</div>
+          <h4>Протоколы соревнований</h4>
+          <p>Официальные протоколы чемпионатов Вооружённых Сил РБ.</p>
+          <a href="protocols.html" class="card__link">Открыть</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">📘</div>
+          <h4>Правила</h4>
+          <p>Правила соревнований на 2025-2028 гг.</p>
+          <a href="rules/rules.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">🏅</div>
+          <h4>Чемпионы</h4>
+          <p>Список победителей и призёров чемпионатов ВС РБ.</p>
+          <a href="protocols/champions.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">📊</div>
+          <h4>Сводная таблица</h4>
+          <p>Результаты команд по итогам соревнований за период 2003-2025 гг.</p>
+          <a href="Table.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">‼️</div>
+          <h4>Рекорды</h4>
+          <p>Лучшие результаты в дисциплинах военно-прикладного многоборья за все периоды.</p>
+          <a href="protocols/records.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+        </article>
+      </div>
+    </section>
+
+
+
+    
+
+    <section class="about container reveal" id="about">
+      <div class="about__panel">
+        <h3>О виде спорта</h3>
+        <p>
+          Военно-прикладное многоборье — вид спорта, сочетающий физическую подготовку и силу характера. Он формирует дисциплину, выносливость, ответственность
+          и командный дух, укрепляя военно-прикладные навыки и спортивный потенциал военнослужащих Вооружённых Сил Республики Беларусь.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Военно-прикладное многоборье</p>
+      <p>Беларусь</p>
+      <p id="current-year"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

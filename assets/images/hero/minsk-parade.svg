@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
+<defs>
+  <linearGradient id='sky' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#4f6674'/><stop offset='1' stop-color='#1f2d36'/></linearGradient>
+  <linearGradient id='road' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#39434a'/><stop offset='1' stop-color='#1a1f23'/></linearGradient>
+</defs>
+<rect width='1600' height='900' fill='url(#sky)'/>
+<rect y='560' width='1600' height='340' fill='url(#road)'/>
+<rect y='520' width='1600' height='40' fill='#5a646d'/>
+<g fill='#2a3238'>
+  <rect x='120' y='300' width='220' height='260'/><rect x='380' y='260' width='180' height='300'/><rect x='610' y='290' width='240' height='270'/><rect x='890' y='245' width='210' height='315'/><rect x='1140' y='280' width='260' height='280'/>
+</g>
+<g fill='#0f1418'>
+  <rect x='80' y='600' width='220' height='70'/><rect x='330' y='600' width='220' height='70'/><rect x='580' y='600' width='220' height='70'/><rect x='830' y='600' width='220' height='70'/><rect x='1080' y='600' width='220' height='70'/>
+</g>
+<g fill='#1f8f4e'><rect x='130' y='620' width='16' height='90'/><rect x='380' y='620' width='16' height='90'/><rect x='630' y='620' width='16' height='90'/><rect x='880' y='620' width='16' height='90'/><rect x='1130' y='620' width='16' height='90'/></g>
+<g fill='#d62828'><rect x='146' y='620' width='70' height='38'/><rect x='396' y='620' width='70' height='38'/><rect x='646' y='620' width='70' height='38'/><rect x='896' y='620' width='70' height='38'/><rect x='1146' y='620' width='70' height='38'/></g>
+<text x='800' y='120' text-anchor='middle' fill='#f3f6f4' font-size='72' font-family='Arial'>Парад в Минске</text>
+</svg>
