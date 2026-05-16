@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Архив официальных протоколов соревнований по военно-прикладному многоборью." />
   <title>Протоколы соревнований</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,147 +12,187 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">
-      <img src="assets/images/champions/emblem.png" class="brand__emblem" alt="Эмблема">
+      <img src="assets/images/champions/emblem.png" class="brand__emblem" alt="Эмблема военно-прикладного многоборья">
       <div class="brand__text">
         <h1>Военно-прикладное многоборье</h1>
         <p>Официальный информационный портал</p>
       </div>
     </a>
+
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="protocols.html" class="is-active">Протоколы</a></li>
+        <li><a href="rules/rules.pdf" target="_blank" rel="noopener">Правила</a></li>
+        <li><a href="champions.html">Чемпионы</a></li>
+        <li><a href="table.html">Таблица</a></li>
+        <li><a href="records.html">Рекорды</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
 <main class="page-main">
 
+<section class="page-hero">
+  <div class="container page-hero__inner reveal visible">
+    <span class="eyebrow">Архив результатов</span>
+    <h2>Протоколы соревнований</h2>
+    <p>Быстрый доступ к официальным PDF-протоколам чемпионатов Вооружённых Сил и открытых первенств по годам.</p>
+  </div>
+</section>
+
 <section class="protocols container reveal visible">
-  <div class="section-title">
-    <h3>Протоколы соревнований</h3>
-    <p>Официальный архив результатов соревнований</p>
+  <div class="protocols-toolbar">
+    <div class="section-title">
+      <h3>Все годы</h3>
+      <p>Выберите сезон и тип соревнований: ВС или ОВС.</p>
+    </div>
+    <p class="protocols-toolbar__hint">2010–2025 · PDF-архив</p>
   </div>
 
 <div class="protocols-grid">
 
   <article class="protocol-card">
     <div class="protocol-year">2025</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/new/BC 2025.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2025.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2025</p>
+    <div class="protocol-actions">
+      <a href="protocols/new/BC 2025.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2025.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2024</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2024.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2024.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2024</p>
+    <div class="protocol-actions">
+      <a href="protocols/2024.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2024.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2023</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2023.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2023.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2023</p>
+    <div class="protocol-actions">
+      <a href="protocols/2023.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2023.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2022</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2022.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2022.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2022</p>
+    <div class="protocol-actions">
+      <a href="protocols/2022.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2022.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2021</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2021.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2021.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2021</p>
+    <div class="protocol-actions">
+      <a href="protocols/2021.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2020</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2020.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2020.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2020</p>
+    <div class="protocol-actions">
+      <a href="protocols/new/OBC 2020.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2019</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2019.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2019.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2019</p>
+    <div class="protocol-actions">
+      <a href="protocols/2019.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2019.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2018</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2018.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2018.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2018</p>
+    <div class="protocol-actions">
+      <a href="protocols/2018.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2018.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2017</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2017.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2017.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2017</p>
+    <div class="protocol-actions">
+      <a href="protocols/2017.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2017.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2016</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2016.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2016.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2016</p>
+    <div class="protocol-actions">
+      <a href="protocols/2016.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2016.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2015</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2015.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2015.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2015</p>
+    <div class="protocol-actions">
+      <a href="protocols/2015.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2015.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2014</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2014.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2014.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2014</p>
+    <div class="protocol-actions">
+      <a href="protocols/2014.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2014.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2013</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2013.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
-      <a href="protocols/new/OBC 2013.pdf" class="protocol-btn protocol-btn--alt" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ОВС</a>
+    <p class="protocol-label">Сезон 2013</p>
+    <div class="protocol-actions">
+      <a href="protocols/2013.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
+      <a href="protocols/new/OBC 2013.pdf" class="protocol-btn protocol-btn--alt" target="_blank" rel="noopener">Открыть ОВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2012</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2012.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
+    <p class="protocol-label">Сезон 2012</p>
+    <div class="protocol-actions">
+      <a href="protocols/2012.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2011</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/2011.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
+    <p class="protocol-label">Сезон 2011</p>
+    <div class="protocol-actions">
+      <a href="protocols/2011.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
     </div>
   </article>
 
   <article class="protocol-card">
     <div class="protocol-year">2010</div>
-    <div class="protocol-actions" style="position:relative;z-index:5;">
-      <a href="protocols/new/BC 2010.pdf" class="protocol-btn" style="position:relative;z-index:10;" target="_blank" rel="noopener">Открыть ВС</a>
+    <p class="protocol-label">Сезон 2010</p>
+    <div class="protocol-actions">
+      <a href="protocols/new/BC 2010.pdf" class="protocol-btn" target="_blank" rel="noopener">Открыть ВС</a>
     </div>
   </article>
 

@@ -60,7 +60,7 @@ if (currentYear) {
 
 
 // Небольшой каскадный эффект появления карточек
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card, .protocol-card');
 cards.forEach((card, index) => {
-  card.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
+  card.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
 });
