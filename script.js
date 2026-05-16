@@ -65,36 +65,6 @@ cards.forEach((card, index) => {
   card.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
 });
 
-// Фильтры архива протоколов
-const filterChips = document.querySelectorAll('.filter-chip');
-const protocolCards = document.querySelectorAll('.protocol-card');
-
-if (filterChips.length && protocolCards.length) {
-  filterChips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      const filter = chip.dataset.filter || 'all';
-
-      filterChips.forEach(item => item.classList.toggle('is-active', item === chip));
-
-      protocolCards.forEach((card, index) => {
-        const typeList = (card.dataset.types || '').split(' ');
-        const shouldShow =
-          filter === 'all' ||
-          card.dataset.era === filter ||
-          typeList.includes(filter);
-
-        card.classList.toggle('is-hidden', !shouldShow);
-        card.classList.remove('is-filtered-in');
-
-        if (shouldShow) {
-          card.style.animationDelay = `${Math.min(index * 35, 210)}ms`;
-          requestAnimationFrame(() => card.classList.add('is-filtered-in'));
-        }
-      });
-    });
-  });
-}
-
 // Лёгкий 3D-отклик карточек на движение курсора
 const canUseHoverMotion = window.matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches;
 
