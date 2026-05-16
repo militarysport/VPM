@@ -99,7 +99,7 @@ if (filterChips.length && protocolCards.length) {
 const canUseHoverMotion = window.matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches;
 
 if (canUseHoverMotion) {
-  document.querySelectorAll('.card, .protocol-card, .dashboard-card').forEach(item => {
+  document.querySelectorAll('.card, .protocol-card').forEach(item => {
     item.addEventListener('pointermove', event => {
       const rect = item.getBoundingClientRect();
       const x = (event.clientX - rect.left) / rect.width - 0.5;
