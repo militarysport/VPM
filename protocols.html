@@ -38,11 +38,18 @@
 
 <main class="page-main">
 
-<section class="page-hero">
+<section class="page-hero page-hero--protocols">
   <div class="container page-hero__inner reveal visible">
-    <span class="eyebrow">Архив результатов</span>
-    <h2>Протоколы соревнований</h2>
-    <p>Быстрый доступ к официальным PDF-протоколам чемпионатов Вооружённых Сил и открытых первенств по годам.</p>
+    <div class="page-hero__copy">
+      <span class="eyebrow">Архив результатов</span>
+      <h2>Протоколы соревнований</h2>
+      <p>Быстрый доступ к официальным PDF-протоколам чемпионатов Вооружённых Сил и открытых первенств по годам.</p>
+    </div>
+    <div class="page-hero__stats" aria-label="Статистика архива">
+      <div><strong>16</strong><span>сезонов</span></div>
+      <div><strong>PDF</strong><span>формат</span></div>
+      <div><strong>ВС / ОВС</strong><span>категории</span></div>
+    </div>
   </div>
 </section>
 
@@ -55,9 +62,17 @@
     <p class="protocols-toolbar__hint">2010–2025 · PDF-архив</p>
   </div>
 
+  <div class="protocol-filters" aria-label="Фильтр протоколов">
+    <button class="filter-chip is-active" type="button" data-filter="all">Все годы</button>
+    <button class="filter-chip" type="button" data-filter="recent">2020–2025</button>
+    <button class="filter-chip" type="button" data-filter="archive">2010–2019</button>
+    <button class="filter-chip" type="button" data-filter="vs">Только ВС</button>
+    <button class="filter-chip" type="button" data-filter="ovs">Только ОВС</button>
+  </div>
+
 <div class="protocols-grid">
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2025" data-era="recent" data-types="vs ovs">
     <div class="protocol-year">2025</div>
     <p class="protocol-label">Сезон 2025</p>
     <div class="protocol-actions">
@@ -66,7 +81,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2024" data-era="recent" data-types="vs ovs">
     <div class="protocol-year">2024</div>
     <p class="protocol-label">Сезон 2024</p>
     <div class="protocol-actions">
@@ -75,7 +90,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2023" data-era="recent" data-types="vs ovs">
     <div class="protocol-year">2023</div>
     <p class="protocol-label">Сезон 2023</p>
     <div class="protocol-actions">
@@ -84,7 +99,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2022" data-era="recent" data-types="vs ovs">
     <div class="protocol-year">2022</div>
     <p class="protocol-label">Сезон 2022</p>
     <div class="protocol-actions">
@@ -93,7 +108,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2021" data-era="recent" data-types="vs">
     <div class="protocol-year">2021</div>
     <p class="protocol-label">Сезон 2021</p>
     <div class="protocol-actions">
@@ -101,7 +116,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2020" data-era="recent" data-types="ovs">
     <div class="protocol-year">2020</div>
     <p class="protocol-label">Сезон 2020</p>
     <div class="protocol-actions">
@@ -109,7 +124,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2019" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2019</div>
     <p class="protocol-label">Сезон 2019</p>
     <div class="protocol-actions">
@@ -118,7 +133,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2018" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2018</div>
     <p class="protocol-label">Сезон 2018</p>
     <div class="protocol-actions">
@@ -127,7 +142,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2017" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2017</div>
     <p class="protocol-label">Сезон 2017</p>
     <div class="protocol-actions">
@@ -136,7 +151,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2016" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2016</div>
     <p class="protocol-label">Сезон 2016</p>
     <div class="protocol-actions">
@@ -145,7 +160,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2015" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2015</div>
     <p class="protocol-label">Сезон 2015</p>
     <div class="protocol-actions">
@@ -154,7 +169,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2014" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2014</div>
     <p class="protocol-label">Сезон 2014</p>
     <div class="protocol-actions">
@@ -163,7 +178,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2013" data-era="archive" data-types="vs ovs">
     <div class="protocol-year">2013</div>
     <p class="protocol-label">Сезон 2013</p>
     <div class="protocol-actions">
@@ -172,7 +187,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2012" data-era="archive" data-types="vs">
     <div class="protocol-year">2012</div>
     <p class="protocol-label">Сезон 2012</p>
     <div class="protocol-actions">
@@ -180,7 +195,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2011" data-era="archive" data-types="vs">
     <div class="protocol-year">2011</div>
     <p class="protocol-label">Сезон 2011</p>
     <div class="protocol-actions">
@@ -188,7 +203,7 @@
     </div>
   </article>
 
-  <article class="protocol-card">
+  <article class="protocol-card" data-year="2010" data-era="archive" data-types="vs">
     <div class="protocol-year">2010</div>
     <p class="protocol-label">Сезон 2010</p>
     <div class="protocol-actions">

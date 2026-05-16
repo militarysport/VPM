@@ -41,18 +41,53 @@
   <main>
     <section class="hero reveal" id="hero">
       <div class="hero__overlay"></div>
+      <div class="hero__glow hero__glow--red" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--green" aria-hidden="true"></div>
       <div class="ornament ornament--left" aria-hidden="true"></div>
       <div class="ornament ornament--right" aria-hidden="true"></div>
       <div class="container hero__content">
-        <p class="hero__kicker">Республика Беларусь</p>
-        <h2>Военно-прикладное многоборье</h2>
-        <p class="hero__subtitle">Сила. Быстрота. Выносливость.</p>
-        <a href="#sections" class="btn-glow">Смотреть разделы</a>
+        <div class="hero__copy">
+          <p class="hero__kicker">Республика Беларусь</p>
+          <h2>Военно-прикладное многоборье</h2>
+          <p class="hero__subtitle">Сила. Быстрота. Выносливость. Архив результатов, нормативы и достижения — в одном современном портале.</p>
+          <div class="hero__actions">
+            <a href="#sections" class="btn-glow">Смотреть разделы</a>
+            <a href="protocols.html" class="btn-outline">Архив протоколов</a>
+          </div>
+        </div>
+
+        <div class="hero__dashboard" aria-label="Ключевые разделы портала">
+          <div class="dashboard-card dashboard-card--main">
+            <span>Архив</span>
+            <strong>2010–2025</strong>
+            <p>Протоколы соревнований по сезонам</p>
+          </div>
+          <div class="dashboard-grid">
+            <div class="dashboard-card">
+              <span>PDF</span>
+              <strong>20+</strong>
+              <p>документов</p>
+            </div>
+            <div class="dashboard-card">
+              <span>Разделы</span>
+              <strong>5</strong>
+              <p>быстрых входов</p>
+            </div>
+          </div>
+          <div class="discipline-strip" aria-hidden="true">
+            <span>🏃 Бег</span>
+            <span>🎯 Метание</span>
+            <span>🧭 Полоса</span>
+            <span>🤝 Команда</span>
+          </div>
+        </div>
       </div>
+      <a href="#sections" class="scroll-cue" aria-label="Перейти к разделам"><span></span></a>
     </section>
 
     <section class="sections container reveal" id="sections">
-      <div class="section-title">
+      <div class="section-title section-title--center">
+        <span class="section-title__eyebrow">Навигация</span>
         <h3>Основные разделы</h3>
         <p>Оперативный доступ к официальной информации, результатам и нормативным материалам.</p>
       </div>
