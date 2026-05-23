@@ -60,7 +60,27 @@ if (currentYear) {
 
 
 // Небольшой каскадный эффект появления карточек
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card, .protocol-card');
 cards.forEach((card, index) => {
-  card.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
+  card.style.transitionDelay = `${Math.min(index * 55, 330)}ms`;
 });
+
+// Лёгкий 3D-отклик карточек на движение курсора
+const canUseHoverMotion = window.matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches;
+
+if (canUseHoverMotion) {
+  document.querySelectorAll('.card, .protocol-card').forEach(item => {
+    item.addEventListener('pointermove', event => {
+      const rect = item.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      item.style.setProperty('--rx', `${(-y * 5).toFixed(2)}deg`);
+      item.style.setProperty('--ry', `${(x * 5).toFixed(2)}deg`);
+    });
+
+    item.addEventListener('pointerleave', () => {
+      item.style.removeProperty('--rx');
+      item.style.removeProperty('--ry');
+    });
+  });
+}

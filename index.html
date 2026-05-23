@@ -27,12 +27,12 @@
 
       <nav class="main-nav" id="main-nav">
         <ul>
-          <li><a href="#top">Главная</a></li>
+          <li><a href="#top" class="is-active">Главная</a></li>
           <li><a href="protocols.html">Протоколы соревнований</a></li>
           <li><a href="rules/rules.pdf" target="_blank" rel="noopener">Правила</a></li>
-          <li><a href="champions.html">Чемпионы</a></li>
+          <li><a href="protocols/champions.pdf" target="_blank" rel="noopener">Чемпионы</a></li>
           <li><a href="Table.pdf" target="_blank" rel="noopener">Сводная таблица</a></li>
-          <li><a href="records.html">Рекорды</a></li>
+          <li><a href="protocols/records.pdf" target="_blank" rel="noopener">Рекорды</a></li>
         </ul>
       </nav>
     </div>
@@ -41,18 +41,25 @@
   <main>
     <section class="hero reveal" id="hero">
       <div class="hero__overlay"></div>
+      <div class="hero__glow hero__glow--red" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--green" aria-hidden="true"></div>
       <div class="ornament ornament--left" aria-hidden="true"></div>
       <div class="ornament ornament--right" aria-hidden="true"></div>
       <div class="container hero__content">
-        <p class="hero__kicker">Республика Беларусь</p>
-        <h2>Военно-прикладное многоборье</h2>
-        <p class="hero__subtitle">Сила. Быстрота. Выносливость.</p>
-        <a href="#sections" class="btn-glow">Смотреть разделы</a>
+        <div class="hero__copy">
+          <p class="hero__kicker">Республика Беларусь</p>
+          <h2>Военно-прикладное многоборье</h2>
+          <p class="hero__subtitle">Сила. Быстрота. Выносливость. Архив результатов, нормативы и достижения — в одном современном портале.</p>
+          <div class="hero__actions">
+            <a href="#sections" class="btn-glow">Смотреть разделы</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="sections container reveal" id="sections">
-      <div class="section-title">
+      <div class="section-title section-title--center">
+        <span class="section-title__eyebrow">Навигация</span>
         <h3>Основные разделы</h3>
         <p>Оперативный доступ к официальной информации, результатам и нормативным материалам.</p>
       </div>
@@ -73,19 +80,19 @@
           <div class="card__icon">🏅</div>
           <h4>Чемпионы</h4>
           <p>Список победителей и призёров чемпионатов ВС РБ.</p>
-          <a href="protocols/champions.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+          <a href="protocols/champions.pdf" target="_blank" rel="noopener" class="card__link">Открыть</a>
         </article>
         <article class="card">
           <div class="card__icon">📊</div>
           <h4>Сводная таблица</h4>
           <p>Результаты команд по итогам соревнований за период 2003-2025 гг.</p>
-          <a href="Table.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+          <a href="Table.pdf" target="_blank" rel="noopener" class="card__link">Открыть</a>
         </article>
         <article class="card">
           <div class="card__icon">‼️</div>
           <h4>Рекорды</h4>
           <p>Лучшие результаты в дисциплинах военно-прикладного многоборья за все периоды.</p>
-          <a href="protocols/records.pdf" class="card__link" target="_blank" rel="noopener">Открыть</a>
+          <a href="protocols/records.pdf" target="_blank" rel="noopener" class="card__link">Открыть</a>
         </article>
       </div>
     </section>
